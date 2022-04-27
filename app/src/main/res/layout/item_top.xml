@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivAvatar_Sach_Top"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sachjava"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <TextView
+            android:id="@+id/tvTenSach_Top"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivAvatar_Sach_Top"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Tên sách: Java 1"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvSoLuong"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenSach_Top"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivAvatar_Sach_Top"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Số lượng: 10"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+</LinearLayout>

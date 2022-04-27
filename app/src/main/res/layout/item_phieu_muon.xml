@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvMaPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Mã PM: 1"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvTenTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMaPM"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Tên TV: Lê Văn C"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvTenThuThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Tên TT: Admin"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenThuThu"
+            android:layout_toLeftOf="@+id/tvTrangThai"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Trạng thái:"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenThuThu"
+            android:layout_toLeftOf="@+id/ivDelete_PM"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Chưa trả sách"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvNgayThue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenSach"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/roboto_italic"
+            android:text="Ngày thuê: 01-01-2022"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvTenSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenTV"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Tên sách: Công nghệ thông tin"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/tvTienThue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenSach"
+            android:layout_marginTop="-1dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Tiền thuê: 6000"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/ivDelete_PM"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+</LinearLayout>

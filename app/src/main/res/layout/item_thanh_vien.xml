@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivAvatar_ThanhVien"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/avatar"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+
+        <TextView
+            android:id="@+id/tvMaThanhVien"
+            android:layout_toRightOf="@+id/ivAvatar_ThanhVien"
+            android:layout_marginLeft="10dp"
+            android:text="Mã thành viên: 1"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTenThanhVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMaThanhVien"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivAvatar_ThanhVien"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Họ tên: Lê Văn A"
+            android:textColor="#000"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tvNamSinh"
+            android:layout_toRightOf="@+id/ivAvatar_ThanhVien"
+            android:layout_below="@+id/tvTenThanhVien"
+            android:layout_marginLeft="10dp"
+            android:text="Năm sinh: 2003"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivDelete_ThanhVien"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

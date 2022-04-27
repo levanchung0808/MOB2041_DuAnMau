@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_custom_border_radius_20"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:src="@drawable/ic_qlphieumuon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMaPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMaPM"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Mã PM"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spTenThanhVien"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:id="@+id/spTenSach"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Spinner
+        android:id="@+id/spThuThu"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconTint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_centerHorizontal="true"
+            app:endIconMode="clear_text">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNgay"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoComplete"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Ngày"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivDate"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_calendar" />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTienThue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTienThue"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Tiền thuê"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/chkTraSach"
+        android:text="Đã trả sách"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnTaoPM"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Tạo" />
+
+        <Button
+            android:id="@+id/btnHuyPM"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_weight="1"
+            android:layout_gravity=""
+            android:text="Huỷ bỏ" />
+    </LinearLayout>
+
+</LinearLayout>

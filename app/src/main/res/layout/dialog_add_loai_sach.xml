@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_custom_border_radius_20"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:src="@drawable/ic_add_loai_sach"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilMaLoaiSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/black"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtMaLoaiSach"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Mã loại sách"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTenLoaiSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/black"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenLoaiSach"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="Tên loại sách"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnTaoLoaiSach"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="Tạo" />
+
+        <Button
+            android:id="@+id/btnHuyLoaiSach"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_weight="1"
+            android:layout_gravity=""
+            android:text="Huỷ bỏ" />
+    </LinearLayout>
+
+</LinearLayout>

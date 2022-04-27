@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivAvatar_LoaiSach"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sachcntt"
+            app:shapeAppearanceOverlay="@style/Circular" />
+
+        <TextView
+            android:id="@+id/tvMaLoaiSach"
+            android:layout_toRightOf="@+id/ivAvatar_LoaiSach"
+            android:layout_marginLeft="10dp"
+            android:text="Mã loại: 1"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTenLoaiSach"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMaLoaiSach"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivAvatar_LoaiSach"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Tên loại: Công nghệ thông tin"
+            android:textColor="#000"
+            android:textSize="24dp" />
+
+
+        <ImageView
+            android:id="@+id/ivDelete_LoaiSach"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
